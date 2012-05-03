@@ -1,8 +1,7 @@
 markdown:   		rdiscount
 pygments:   		true
 permalink:  		/:year/:month/:title.html
-exclude:  			[Gemfile, Gemfile.lock, stats.xml]
-auto:       		true
+exclude:  			[Gemfile, Gemfile.lock, README.md]
 pygments:  			true
 rdiscount:
   extensions: 		[smart]
