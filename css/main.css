@@ -19,6 +19,9 @@ ol {
 pre {
 	padding-top: 10px;
 	padding-bottom: 10px;
+	background: #1d1f21; 
+	color: #c5c8c6; 
+	background-color: #1d1f21;
 }
 
 blockquote {
