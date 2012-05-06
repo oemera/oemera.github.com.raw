@@ -1,0 +1,54 @@
+{% comment %}
+Footer for all pages
+{% endcomment %}
+	<footer class="footer">
+		<div class="more">
+  			<div class="more-body">
+				<div class="elsewhere-list">
+					<div class="item no-icon">Elsewhere...</div>
+					<div class="item git"><a href="http://github.com/oemera">GitHub</a></div>
+					<div class="item twitter"><a href="http://twitter.com/ObviousCaptain">Twitter</a></div>
+				</div><div class="clear"></div>
+				<div class="header-hr">&nbsp;</div>
+				<div class="grid-list">
+					<div class="tags grid">
+						<div class="no-icon">Tags</div>
+						{% for tag in site.iterable.popular_tags %}
+        					<div class="item"><a href="/tag/{{tag.name}}">{{tag.name}}</a></div>
+						{% endfor %}
+					</div>
+					<div class="archive grid">
+						<div class="no-icon">Archiv</div>
+						{% for month in site.last_five_months %}
+							<div class="item">
+								<a href="/{{ month.first.date | date: "%Y/%m" }}">
+									{{ month.first.date | date: "%B %Y" }} ({{ month | size }} posts)
+								</a>
+							</div>
+						{% endfor %}
+					</div>
+					<div class="most-read grid">
+						<div class="no-icon">Most read</div>
+						{% clicky site_id:66574530 site_key:7ce6626b7de45b90 ttl:3600 %}
+							<div class="row">
+								<div class="arrow">&rsaquo;</div>
+								<div class="item">
+									<a href="{{ item.link }}">{{ item.title }}</a>
+								</div>
+							</div>
+						{% endclicky %}
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="header-hr last">&nbsp;</div>
+				<section class="copyright">
+					<div class="license-logo">
+						<a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a>
+					</div>
+					<div class="license-text">Dieses Werk bzw. Inhalt steht unter einer <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Namensnennung 3.0 Unported Lizenz</a>. <br>Hier geht es zum <a href="/impressum.html">Impressum</a>.</div>
+					<div class="clear"></div>
+				</section>
+			</div><!-- end of more-body -->
+  		</div><!-- end of .more -->
+    </footer>

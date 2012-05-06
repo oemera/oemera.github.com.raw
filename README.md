@@ -22,7 +22,7 @@ For a automatic build and deploy process I use couple of bash commands. I got th
 	rm -rf $(ls -la | grep -v .git | grep -v . | grep -v .. | grep -v .nojekyll | grep -v README.md); \
 	cp -r ~/Documents/Development/WebWorkspace/oemera.github.com.raw/_site/* \
 	~/Documents/Development/WebWorkspace/oemera.github.com; \
-	cd ~/Documents/Development/WebWorkspace/oemera.github.com;\
+	cd ~/Documents/Development/WebWorkspace/oemera.github.com; \
 	git add .;git commit -am 'Latest build.';git push"
 	
 	alias bb="build_blog"
