@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .highlight .hll { background-color: #ffffcc }
 .highlight  { background: #1d1f21; color: #c5c8c6; background-color: #1d1f21 }
 .highlight .c { color: #969896; background-color: #1d1f21 } /* Comment */
@@ -131,11 +130,3 @@
 .vg { color: #19177C } /* Name.Variable.Global */
 .vi { color: #19177C } /* Name.Variable.Instance */
 .il { color: #666666 } /* Literal.Number.Integer.Long */
-
-pre code {
-  display: block; padding: 0.5em;
-  background: #2f2f2f;
-  color: #E6E0DB;
-  font-size: 15px;
-}
->>>>>>> d7cff7d57637f961ceacfef60cd8c8c9d4622faa
